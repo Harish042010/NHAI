@@ -7,6 +7,8 @@
 ![Status](https://img.shields.io/badge/status-Hackathon%20Prototype-orange.svg)
 ![AI](https://img.shields.io/badge/AI-Edge%20Processing-purple.svg)
 
+🌐 **Live Demo:** [https://nhai-w7u6.onrender.com/](https://nhai-w7u6.onrender.com/)
+
 ---
 
 ## 📋 Table of Contents
