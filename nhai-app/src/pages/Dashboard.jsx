@@ -2,7 +2,7 @@ import {
   Users, UserCheck, RefreshCw, TrendingUp,
   Clock, Shield, Zap, ArrowUpRight, ArrowDownRight
 } from 'lucide-react';
-import { dashboardStats, recentActivity, weeklyAttendance } from '../data/employees';
+import { dashboardStats, recentActivity } from '../data/employees';
 
 export default function Dashboard() {
   const stats = [
@@ -14,14 +14,7 @@ export default function Dashboard() {
       change: '+2 this month',
       positive: true,
     },
-    {
-      label: "Today's Attendance",
-      value: `${dashboardStats.todayAttendance}/${dashboardStats.totalEmployees}`,
-      icon: <UserCheck size={24} />,
-      color: 'green',
-      change: '75% present',
-      positive: true,
-    },
+
     {
       label: 'Pending Sync',
       value: dashboardStats.pendingSync,
@@ -40,7 +33,7 @@ export default function Dashboard() {
     },
   ];
 
-  const maxCount = Math.max(...weeklyAttendance.map(d => d.count));
+
 
   return (
     <div>
@@ -104,31 +97,7 @@ export default function Dashboard() {
 
       {/* Charts & Activity */}
       <div className="grid-2">
-        {/* Weekly Attendance Chart */}
-        <div className="card animate-fadeInUp delay-2">
-          <h3 style={{
-            fontSize: '16px',
-            fontWeight: 700,
-            marginBottom: '24px',
-            color: 'var(--text-primary)'
-          }}>
-            Weekly Attendance
-          </h3>
-          <div className="bar-chart" style={{ paddingBottom: '28px' }}>
-            {weeklyAttendance.map((day, idx) => (
-              <div
-                key={idx}
-                className="bar"
-                style={{
-                  height: `${(day.count / maxCount) * 100}%`,
-                  animationDelay: `${idx * 0.1}s`
-                }}
-              >
-                <span className="bar-label">{day.day}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+
 
         {/* Recent Activity */}
         <div className="card animate-fadeInUp delay-3">

@@ -76,7 +76,7 @@ export default function Authentication() {
       case 'liveness': return <><Shield size={14} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Verifying Liveness...</>;
       case 'recognizing': return <><Brain size={14} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Recognizing Face...</>;
       case 'verified': return <><CheckCircle size={14} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Identity Verified</>;
-      case 'success': return <><CheckCircle size={14} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Attendance Marked</>;
+      case 'success': return <><CheckCircle size={14} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Authentication Successful</>;
       default: return <><Camera size={14} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Ready to Scan</>;
     }
   };
@@ -101,7 +101,7 @@ export default function Authentication() {
             </div>
             <h3 className="success-title">Authentication Successful!</h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: '15px', marginBottom: '4px' }}>
-              Identity verified and attendance recorded
+              Identity verified
             </p>
 
             {/* Employee Info */}

@@ -4,7 +4,6 @@
 
 const STORAGE_KEYS = {
   EMPLOYEES: 'nhai_employees',
-  ATTENDANCE: 'nhai_attendance',
   AUDIT_LOG: 'nhai_audit_log',
 };
 

@@ -66,7 +66,7 @@ export default function SplashScreen() {
 
         {/* Description */}
         <p className="splash-description">
-          Secure, AI-powered attendance and identity verification for NHAI field personnel. 
+          Secure, AI-powered identity verification for NHAI field personnel. 
           Works entirely offline in remote highway locations. Edge AI processing with 
           multi-layer liveness detection and AES-256 encryption.
         </p>

@@ -73,13 +73,7 @@ export default function SettingsPage() {
                 />
               </div>
 
-              <div className="settings-item">
-                <div className="settings-item-info">
-                  <span className="label">Attendance Tamper Protection</span>
-                  <span className="description">Hash-chain verification for records</span>
-                </div>
-                <div className="toggle-switch active" />
-              </div>
+
             </div>
           </div>
 
@@ -154,16 +148,7 @@ export default function SettingsPage() {
                 />
               </div>
 
-              <div className="settings-item">
-                <div className="settings-item-info">
-                  <span className="label">Geo-Tagging</span>
-                  <span className="description">Tag attendance with GPS coordinates</span>
-                </div>
-                <div
-                  className={`toggle-switch ${settings.geoTagging ? 'active' : ''}`}
-                  onClick={() => toggle('geoTagging')}
-                />
-              </div>
+
 
               <div className="settings-item">
                 <div className="settings-item-info">

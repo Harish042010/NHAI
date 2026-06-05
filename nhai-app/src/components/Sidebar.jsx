@@ -12,7 +12,7 @@ const navItems = [
   { path: '/authenticate', label: 'Face Authentication', icon: Camera },
   { path: '/liveness', label: 'Liveness Detection', icon: ScanFace },
   { section: 'Records' },
-  { path: '/attendance', label: 'Attendance History', icon: ClipboardList, badge: '6' },
+
   { path: '/sync', label: 'Sync Dashboard', icon: RefreshCw, badge: '3' },
   { section: 'System' },
   { path: '/settings', label: 'Settings', icon: Settings },

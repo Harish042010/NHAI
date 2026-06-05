@@ -7,7 +7,7 @@ import Dashboard from './pages/Dashboard';
 import Enrollment from './pages/Enrollment';
 import Authentication from './pages/Authentication';
 import LivenessDetection from './pages/LivenessDetection';
-import AttendanceHistory from './pages/AttendanceHistory';
+
 import SyncDashboard from './pages/SyncDashboard';
 import SettingsPage from './pages/SettingsPage';
 import './index.css';
@@ -17,7 +17,7 @@ const pageTitles = {
   '/enrollment': 'Employee Enrollment',
   '/authenticate': 'Face Authentication',
   '/liveness': 'Liveness Detection',
-  '/attendance': 'Attendance History',
+
   '/sync': 'Sync Dashboard',
   '/settings': 'Settings',
 };
@@ -51,7 +51,7 @@ function AppLayout({ theme, onToggleTheme }) {
             <Route path="/enrollment" element={<Enrollment />} />
             <Route path="/authenticate" element={<Authentication />} />
             <Route path="/liveness" element={<LivenessDetection />} />
-            <Route path="/attendance" element={<AttendanceHistory />} />
+
             <Route path="/sync" element={<SyncDashboard />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
