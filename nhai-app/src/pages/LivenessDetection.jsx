@@ -17,25 +17,11 @@ const challenges = [
     listIcon: <Smile size={16} />,
   },
   {
-    key: 'left',
-    title: 'Turn Head Left',
-    subtitle: 'Slowly turn your head to the left',
+    key: 'turn',
+    title: 'Turn Head Slightly',
+    subtitle: 'Slowly turn your head slightly',
     icon: <RotateCcw size={44} />,
     listIcon: <RotateCcw size={16} />,
-  },
-  {
-    key: 'right',
-    title: 'Turn Head Right',
-    subtitle: 'Slowly turn your head to the right',
-    icon: <RotateCw size={44} />,
-    listIcon: <RotateCw size={16} />,
-  },
-  {
-    key: 'nod',
-    title: 'Nod Your Head',
-    subtitle: 'Nod your head up and down gently',
-    icon: <ArrowDown size={44} />,
-    listIcon: <ArrowDown size={16} />,
   },
 ];
 
@@ -50,7 +36,7 @@ export default function LivenessDetection() {
   // Shuffle challenges for randomness
   const [shuffledChallenges] = useState(() => {
     const shuffled = [...challenges].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 4); // Pick 4 random challenges
+    return shuffled.slice(0, 3); // Pick 3 challenges
   });
 
   const startChallenge = useCallback(() => {

@@ -32,7 +32,7 @@ export default function Sidebar({ isOpen, onClose, theme, onToggleTheme }) {
             <Shield size={24} />
           </div>
           <div className="sidebar-title">
-            <h1>NHAI Auth</h1>
+            <h1>Datalake 3.0 Auth</h1>
             <span>Face Recognition System</span>
           </div>
         </div>
@@ -83,8 +83,8 @@ export default function Sidebar({ isOpen, onClose, theme, onToggleTheme }) {
             textAlign: 'center',
             lineHeight: 1.5
           }}>
-            NHAI Innovation Hackathon 7.0<br />
-            v1.0.0 — Edge AI Prototype
+            NHAI Innovation Hackathon<br />
+            Datalake 3.0 Edge AI Prototype
           </div>
         </div>
       </aside>

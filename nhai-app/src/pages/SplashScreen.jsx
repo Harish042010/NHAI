@@ -11,9 +11,10 @@ export default function SplashScreen() {
     { icon: <Camera size={20} />, text: 'Face Recognition' },
     { icon: <Fingerprint size={20} />, text: 'Liveness Detection' },
     { icon: <WifiOff size={20} />, text: '100% Offline' },
-    { icon: <Lock size={20} />, text: 'AES-256 Encrypted' },
-    { icon: <Zap size={20} />, text: '< 1s Auth Time' },
-    { icon: <Shield size={20} />, text: 'Anti-Spoofing' },
+    { icon: <Lock size={20} />, text: 'Sync & Purge' },
+    { icon: <Zap size={20} />, text: '< 1s Processing' },
+    { icon: <Shield size={20} />, text: '< 20MB Size' },
+    { icon: <Fingerprint size={20} />, text: '> 95% Accuracy' },
   ];
 
   // Generate particles
@@ -60,15 +61,14 @@ export default function SplashScreen() {
         {/* Title */}
         <h1 className="splash-title">
           Offline Face<br />
-          <span className="highlight">Authentication</span><br />
-          System
+          <span className="highlight">Face Authentication</span><br />
+          System for Datalake 3.0
         </h1>
 
         {/* Description */}
         <p className="splash-description">
-          Secure, AI-powered identity verification for NHAI field personnel. 
-          Works entirely offline in remote highway locations. Edge AI processing with 
-          multi-layer liveness detection and AES-256 encryption.
+          Secure, AI-powered identity verification for NHAI field personnel seamlessly integrated into the Datalake 3.0 app. 
+          Built with React Native for cross-platform support (Android 8.0+ & iOS 12+), operating entirely offline in zero-network zones.
         </p>
 
         {/* Actions */}

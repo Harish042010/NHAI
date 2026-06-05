@@ -25,7 +25,7 @@ const pageTitles = {
 function AppLayout({ theme, onToggleTheme }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
-  const title = pageTitles[location.pathname] || 'NHAI';
+  const title = pageTitles[location.pathname] || 'Datalake 3.0 Auth';
 
   // Close sidebar on route change (mobile)
   useEffect(() => {

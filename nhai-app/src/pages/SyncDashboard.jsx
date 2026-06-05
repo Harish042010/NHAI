@@ -47,7 +47,7 @@ export default function SyncDashboard() {
           </div>
           <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>
             {isOnline
-              ? 'Ready to sync pending records to AWS S3'
+              ? 'Ready to sync pending records to AWS Server and purge local data'
               : 'Data is being stored securely on device. Will sync when network returns.'}
           </div>
         </div>
@@ -196,9 +196,9 @@ export default function SyncDashboard() {
             {[
               { label: 'Monitor Network', desc: 'Continuously check for connectivity', icon: <Wifi size={18} />, active: true },
               { label: 'Batch Records', desc: 'Group pending data for upload', icon: <Database size={18} />, active: isOnline },
-              { label: 'Upload to AWS S3', desc: 'Encrypted transfer to cloud storage', icon: <Cloud size={18} />, active: syncing },
+              { label: 'Sync with AWS Server', desc: 'Encrypted transfer to cloud storage', icon: <Cloud size={18} />, active: syncing },
               { label: 'Confirm Receipt', desc: 'Verify server acknowledgment', icon: <CheckCircle size={18} />, active: false },
-              { label: 'Purge Local', desc: 'Delete synced records from device', icon: <HardDrive size={18} />, active: false },
+              { label: 'Purge Local Data', desc: 'Delete synced records from device to free space', icon: <HardDrive size={18} />, active: false },
             ].map((step, idx) => (
               <div key={idx} style={{
                 display: 'flex',

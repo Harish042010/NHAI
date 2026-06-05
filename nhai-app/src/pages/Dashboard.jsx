@@ -39,7 +39,7 @@ export default function Dashboard() {
     <div>
       <div className="page-header">
         <h2>Dashboard</h2>
-        <p>Overview of the Offline Face Authentication System</p>
+        <p>Offline Face Authentication System for Datalake 3.0 Integration</p>
       </div>
 
       {/* Stats Grid */}
@@ -143,7 +143,7 @@ export default function Dashboard() {
             { label: 'Liveness Engine', status: 'Active', type: 'success' },
             { label: 'Recognition Model', status: 'Active', type: 'success' },
             { label: 'SQLCipher Database', status: 'Encrypted', type: 'info' },
-            { label: 'Cloud Sync', status: 'Offline', type: 'warning' },
+            { label: 'Sync & Purge (AWS)', status: 'Offline', type: 'warning' },
             { label: 'Security Module', status: 'AES-256', type: 'info' },
           ].map((item, idx) => (
             <div key={idx} style={{

@@ -109,8 +109,8 @@ export default function SettingsPage() {
 
               <div className="settings-item">
                 <div className="settings-item-info">
-                  <span className="label">Data Retention</span>
-                  <span className="description">Delete synced records after</span>
+                  <span className="label">Sync & Purge</span>
+                  <span className="description">Delete local data after syncing with AWS</span>
                 </div>
                 <select
                   className="form-select"
@@ -172,16 +172,16 @@ export default function SettingsPage() {
               </h3>
 
               {[
-                { label: 'Application', value: 'NHAI Face Auth v1.0.0' },
+                { label: 'Application', value: 'Datalake 3.0 Integration Prototype' },
                 { label: 'Face Detection', value: 'MediaPipe Face Mesh' },
                 { label: 'Liveness Model', value: 'MiniFASNet v2' },
                 { label: 'Recognition Model', value: 'MobileFaceNet' },
                 { label: 'Database', value: 'SQLCipher (AES-256)' },
-                { label: 'Model Size', value: '< 5 MB Total' },
+                { label: 'Model Size', value: '~20 MB' },
                 { label: 'Auth Speed', value: '< 1 Second' },
-                { label: 'Accuracy', value: '> 97%' },
-                { label: 'Cloud Backend', value: 'AWS S3 + Lambda' },
-                { label: 'Platform', value: 'Android + iOS + Web' },
+                { label: 'Accuracy', value: '> 95%' },
+                { label: 'Cloud Backend', value: 'AWS Server' },
+                { label: 'Platform', value: 'React Native (Android 8.0+ & iOS 12+)' },
               ].map((item, idx) => (
                 <div key={idx} style={{
                   display: 'flex',
